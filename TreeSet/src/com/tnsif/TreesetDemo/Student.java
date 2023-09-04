@@ -1,6 +1,6 @@
 package com.tnsif.TreesetDemo;
 
-public class Student  implements Comparable{
+public class Student  implements Comparable<Student>{
   private String name;
   private int RollNo;
   
@@ -31,9 +31,15 @@ public String toString() {
 	return "Student [name=" + name + ", RollNo=" + RollNo + "]";
 }
 @Override
-public int compareTo(Object o) {
+public int compareTo(Student st) {
 	// TODO Auto-generated method stub
-	return 0;
+	if(RollNo==st.RollNo) 
+		return 0;
+	else if(RollNo<st.RollNo)
+		return 1;
+	else
+		return -1;
 }
+
   
 }

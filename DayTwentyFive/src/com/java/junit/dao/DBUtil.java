@@ -14,7 +14,7 @@ public class DBUtil {
 			//load the JDBC driver
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("Driver loaded successfully");
-			cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","Sanavi@05"); //connect to database");
+			cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","root"); //connect to database");
 			System.out.println("Connection established...");
 		} catch (ClassNotFoundException e) {
 
